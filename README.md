@@ -7,4 +7,6 @@ Freue mich über PRs bei Korrekturen. ;)
 
 Erstellt in ```Visual Studio Code``` mit ```SQLTools Plugin``` und ```XAMPP``` für das Handling der Datenbank.
 
+Naja. Und unter ```macOS Ventura Dev Edition``` und `FreeBSD 14.0-CURRENT``` - oftmals dann doch mit ```neovim + Plugins```. ;)
+
 # <3
