@@ -1,0 +1,41 @@
+/* Stuart Meya, FI-C12: /*
+ 
+ /* Aggregatfunktionen /*
+ 
+ /* Beispiel: */
+SELECT COUNT(Artikel_Nr) AS ANZAHL,
+    SUM(Listenpreis) AS PREISSUMME,
+    AVG(Listenpreis) AS DURCHSCHNITT,
+    MIN(Listenpreis) AS 'KLEINSTER PREIS',
+    MAX(Listenpreis) AS 'GROESSTER PREIS'
+FROM T_Artikel;
+/*
+ A5.3-06-1 
+ Frage 1: Warum liefert im obigen Fall die Funktion COUNT(Artikel_Nr) mit Sicherheit dasselbe Ergebnis  wie  COUNT(*)?
+ Frage 2: Was würde bei Anwendung von COUNT(DISTINCT Artikel_Nr) herauskommen?
+ 
+ Antwort:
+ Frage 1: COUNT(*) gibt die Anzahl aller Zeilen in der Tabelle zurück, während COUNT(Artikel_Nr) nur die Anzahl der Zeilen zurückgibt, in denen der Wert in der Spalte "Artikel_Nr" nicht NULL ist. Da "Artikel_Nr" keine NULL-Werte enthält, zählen beide Funktionen die gleiche Anzahl von Zeilen.
+ Frage 2: Wenn die Funktion COUNT(DISTINCT Artikel_Nr) auf der Tabelle T_Artikel angewendet wird, gibt sie die Anzahl der verschiedenen (distinct) Werte in der Spalte "Artikel_Nr" zurück.
+ */
+___________________________________________________________
+/* Gruppierung */
+/* A5.3-07-1 */
+/* Lassen Sie pro Mwst-Satz die Anzahl der davon betroffenen Artikel anzeigen: */
+SELECT T_Mwst.Mwst_Satz,
+    COUNT(T_Artikel.Artikel_Nr) AS Anzahl
+FROM T_Artikel
+    INNER JOIN T_Mwst ON T_Artikel.Mwst_ID = T_Mwst.Mwst_ID
+GROUP BY T_Mwst.Mwst_Satz;
+/* A5.3-07-2 Geben Sie jeweils die größte Kundennummer der Kunden mit demselben Status aus. */
+SELECT Status,
+    MAX(Kundennummer) AS MaxKundennummer
+FROM T_Kunden
+GROUP BY Status;
+/* A5.3-07-3 Zeigen Sie je Lagerplatz den kleinsten, den größten und den durchschnittlichen Listenpreis der dort gelagerten Artikel an. */
+SELECT Lagerplatz,
+    MIN(Listenpreis) AS KleinsterPreis,
+    MAX(Listenpreis) AS GroessterPreis,
+    AVG(Listenpreis) AS Durchschnittspreis
+FROM T_Artikel
+GROUP BY Lagerplatz;

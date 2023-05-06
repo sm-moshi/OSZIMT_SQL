@@ -1,0 +1,8 @@
+Vorlage 5.4
+
+A08-1
+Wie viele Ihrer Kunden haben jeweils die gleiche Postleitzahl?
+A08-2
+Unter welcher Postleitzahl haben Sie mehr als einen Kunden?
+A08-3
+Zu welcher Zahlungsart haben Sie mehr als zwei Kunden?

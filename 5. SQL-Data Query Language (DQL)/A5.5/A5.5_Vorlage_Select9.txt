@@ -1,0 +1,46 @@
+Abfragen mit mehreren Relationen
+
+A5.5-09-1 
+Zeigen Sie zu jedem Artikel den Mehrwertsteuersatz an! 
+(Ausgabe: Bezeichnung, Mwst, Prozent) 
+
+A5.5-09-2 
+Zeigen Sie mit Hilfe des Mehrwertsteuersatzes den Bruttopreis der Artikel an! 
+(Ausgabe: Bezeichnung, Bruttopreis) 
+
+A5.5-09-3 
+Zeigen Sie zu jeder Bestellung den Wohnort des Kunden an. 
+(Ausgabe: Bestellnummer, Bestelldatum, Ort) 
+
+A5.5-09-4 
+Zeigen Sie zu jeder Bestellposition die Bestellmenge, die Bestellnummer und den Wohnort 
+des Kunden an! 
+(Ausgabe: Bestellnummer, Artikelnummer, Bestellmenge, Ort) 
+
+A5.5-09-5 
+Zeigen Sie zu jedem Ort die Anzahl der bestellten Artikel an! 
+(Ausgabe: Bestellmenge, Ort) 
+
+A5.5-09-6 
+Listen Sie die Artikel mit ihrer zugehörigen Bestellmenge auf. 
+Ausgabe: Bezeichnung, Artikelnummer, Bestellmenge) 
+
+A5.5-09-7 
+Listen Sie die Kunden mit ihrer zugehörigen Bankverbindung auf! 
+(Ausgabe: Vorname, Nachname, BLZ, Kontonummer, Kontoinhaber) 
+
+A5.5-09-8 
+Welche Artikel wurden wievielmal verkauft? 
+Ausgabe: Bezeichnung, Artikelnummer, Liefermenge) 
+
+A5.5-09-9 
+Welche Artikel wurden per Bankeinzug bezahlt? 
+(Ausgabe: Bezeichnung, Artikelnummer, Zahlungsart) 
+
+A5.5-09-10 
+Welche  und  wie  viele  Artikel  sind  zwar  bestellt  aber  stehen  noch  zur  Lieferung  aus? 
+(Ausgabe: Bezeichnung, Artikelnummer, Noch zu liefernde Artikel) 
+
+A5.5-09-11 
+Welche Bestellung hat welchen Gesamtumsatz (einschließlich MWSt) erbracht? 
+(Ausgabe: Vorname und Nachname des Kunden, Bestellnummer, Umsatz) 

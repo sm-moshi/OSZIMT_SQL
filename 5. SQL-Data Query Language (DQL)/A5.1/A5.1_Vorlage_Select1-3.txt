@@ -1,0 +1,38 @@
+PROJEKTION
+
+A5.1-1≠ê
+Sortieren Sie alle Kunden nach dem Attribut Zahlung und dann als zweites nach der PLZ.
+
+SELECT Zahlungsart, PLZ, Nachname
+FROM T_Kunden
+ORDER BY Zahlungsart, PLZ;
+
+A5.1-02-1
+Lassen Sie zu allen Positionen die Bestellnummer und die Artikelnummer ausgeben.
+Sortieren Sie hierarchisch nach Bestellnummer und Artikelnummer.
+
+A5.1-02-2
+An welchen (verschiedenen) Lagerpl‰tzen haben Sie Artikel?
+
+A5.1-02-3
+Lassen Sie die verschiedenen Paare von PLZ und Ort der Kundentabelle ausgeben
+
+___________________________________________________________
+
+PROJEKTION und SELEKTION
+
+A5.1-03-1
+ƒndern Sie die beiden Beispiele vom Anfang der Seite so ab, dass man ohne den NOT - Operator zur gleichen Ergebnismenge kommt.
+
+A5.1-03-2
+Bei welchen Positionen sind Artikel mit den Nummern 'G001', 'G002' oder 'G003' geliefert worden? 
+(A5.1-03-2-1: Bei welchen dieser Positionen ist die Liefermenge grˆﬂer als 2?)
+
+A5.1-03-3
+Bei welchen Positionen sind keine Artikel mit den oben genannten Nummern geliefert worden?
+
+A5.1-03-4
+Welche Kunden sind keine Stammkunden? Geben Sie die Kundennummer, den Namen,den Ort und den Status aus.
+
+A5.1-03-5
+Welche Kunden sind keine Stammkunden und nicht aus Husum?

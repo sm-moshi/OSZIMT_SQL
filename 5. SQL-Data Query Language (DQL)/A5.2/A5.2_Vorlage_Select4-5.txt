@@ -1,0 +1,40 @@
+Weitere Vergleichsoperatoren
+
+A5.2-04-1 
+Welche Bestellungen sind vom Mai 1996 (mehrere Lösungen)?  
+
+A5.2-04-2 
+Welche Artikel enthalten in der Bezeichnung "kekse"? 
+
+A5.2-04-3 
+Die Artikel, deren Artikelnummer mit "G" anfangen, sollen aufgelistet werden. 
+
+A5.2-04-4 
+Zeige alle Positionen an, in denen die Artikel "K001" oder "G003" vorkommen.  
+
+A5.2-04-5 
+Bei welchen Artikeln liegt der Listenpreis zwischen 6 und 15 Euro? 
+
+
+___________________________________________________________
+
+PROJEKTION mit virtuellen Attributen
+
+A5.2-05-1 
+Die Relation T_Positionen enthält jeweils den Kaufpreis für den gelieferten Artikel. Aus 
+der  Liefermenge  und  dem  Kaufpreis  lässt  sich  der  Lieferpreis  der  Position  berechnen. 
+Geben  Sie  für  jede  Position  die  Bestellnummer  und  die  Artikelnummer  aus,  sowie  den 
+Lieferpreis des Artikels, geben Sie der virtuellen Spalte den Alias "Lieferpreis".  
+
+A5.2-05-2  
+Bestellungen  sind  "offene  Bestellungen",  wenn  noch  kein  Lieferdatum  eingetragen  ist. 
+Listen Sie alle offenen Bestellungen in der Form auf, dass Sie die Bestellnummer mit dem 
+Bestelldatum in einer Spalte ausgeben, zwischen Bestellnummer und Datum setzen sie das 
+Wort "vom". Der virtuellen Spalte geben Sie den Namen "Offene Bestellungen". 
+
+A5.2-05-3  
+Die Lieferung hat spätestens 14 Tage nach der Bestellung zu erfolgen. Geben Sie zu allen 
+Bestellungen, die noch nicht geliefert sind, das späteste Lieferdatum als virtuelle Spalte mit 
+dem Titel "Späteste Lieferung" aus. 
+Hinweis:  Ein  Datumswert  kann  durch  Addition  oder  Subtraktion  einer  beliebigen  Anzahl  von  Tagen 
+"verschoben" werden. 

@@ -1,0 +1,27 @@
+Unterabfragen
+A5.6-C01-1 
+Ermitteln Sie den günstigsten Artikel!
+(Ausgabe: Artikelnummer, Bezeichnung, Listenpreis)
+
+A5.6-C01-2 
+Welcher Kunde hat die letzte Bestellung aufgegeben?
+Hinweis: Zur Lösung benötigen Sie in der Hauptabfrage einen Verbund von T_Kunden und T_Bestellungen.
+(Ausgabe: Kundennummer, Nachname, Vorname, Bestellnummer)
+
+A5.6-C02-1
+Welche Bestellungen sind nicht von Kunden aus Kayhude?
+(Ausgabe: Bestellnummer)
+
+A5.6-C02-2
+Welche Artikel haben einen höheren Listenpreis als alle Artikel, deren Artikelnummer mit G anfängt? 
+Hinweis: Verwenden Sie in der Bedingung der Unterabfrage den Operator LIKE.
+(Ausgabe: Artikelnummer, Bezeichnung, Listenpreis)
+
+A5.6-C02-3
+Welche Kunden haben schon irgendwann einmal vor der letzten an sie gerichteten Werbe-aktion eine Bestellung aufgegeben? 
+Hinweis: Hier ist eine korrelierte Unterabfrage erforderlich, bei der nur jeweils die Bestel¬lungen ausgewertet werden, die der betreffende Kunde aufgegeben hat. 
+(Ausgabe: Kundennummer, Vorname, Nachname)
+
+A5.6-C02-4
+Welche Kunden haben kein Girokonto?
+(Ausgabe: Kundennummer, Vorname, Nachname)
